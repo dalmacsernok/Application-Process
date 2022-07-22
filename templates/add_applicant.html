@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Add new applicant
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form action = "/add-applicant" method = "POST">
+            <label for="first-name">First name:</label><br>
+            <input type="text" id="first-name" name="first-name" required><br>
+            <label for="last-name">Last name:</label><br>
+            <input type="text" name="ln" id="last-name" required/><br>
+            <label for="pn">Phone number:</label><br>
+            <input type="text" name = "phone-number" id= "phone-number" required><br>
+            <label for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <label for="application-code">Application code:</label><br>
+            <input type="text" id="application-code" name="application-code"><br>
+            <input type = "submit" value = "Add new applicant!"><br>
+        </form>
+    </div>
+
+
+    {% include 'footer.html' %}
+{% endblock %}

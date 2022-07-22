@@ -1,0 +1,14 @@
+body {
+    background-color: #1125b2;
+    color: #c57979;
+    font-family: Dyuthi;
+    font-weight: inherit;
+    font-style: oblique;
+    text-align: left;
+
+
+.content-wrapper {
+    padding: 15%;
+    margin: 20px;;
+
+}
